@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+header {
+  padding: 32px 16px 65px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 36px;
+}
+header > p {
+  padding: 15px 15px;
+}
+header > p::after {
+  content: "Muntasir";
+  background-color: black;
+  color: white;
+  padding: 2px 4px;
+  margin-left: 4px;
+}
+main {
+  display: flex;
+}
+article.article-1,
+article.article-2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+article.article-1 > div > img {
+  width: 100%;
+  max-width: 850px;
+}
+article.article-1 > div {
+  max-width: 850px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #989898;
+}
+article.article-1 > div > figcaption {
+  padding: 10px 16px;
+}
+article.article-1 > div > figcaption > h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+article.article-1 > div > figcaption > h5 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 0 30px;
+}
+article.article-1 > div > figcaption > h5 > span {
+  color: #808080;
+}
+article.article-1 > div > figcaption > div.button-box > button {
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: white;
+}
+article.article-1 > div > figcaption > div.button-box > button:hover {
+  background-color: #cccccc;
+}
+article.article-1 > div > figcaption > div.button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px 10px 0;
+}
+article.article-1 > div > figcaption > div.button-box > p {
+  font-size: 15px;
+  font-weight: 600;
+}
+article.article-1 > div > figcaption > div.button-box > p::after {
+  content: "0";
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  margin-left: 10px;
+}
+article.article-2 > div.box-1 > img {
+  width: 100%;
+  max-width: 450px;
+}
+article.article-2 > div.box-2 > div.content > img {
+  height: 50px;
+  width: 50px;
+  display: inline;
+}
+article.article-2 > div {
+  background-color: white;
+  max-width: 450px;
+  box-shadow: 5px 5px 10px #989898;
+}
+article.article-2 > div.box-1 > figcaption {
+  padding: 10px 16px;
+}
+article.article-2 > div.box-1 > figcaption > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 18px;
+}
+article.article-2 > div.box-2 > h4,
+article.article-2 > div.box-3 > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px;
+  background-color: #f1f1f1;
+}
+article.article-2 > div.box-2 > div.content {
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+}
+article.article-2 > div.box-2 > div.content:hover {
+  background-color: #cccccc;
+}
+article.article-2 > div.box-2 > div.content > figcaption > h6 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+article.article-2 > div.box-3 > div.tags {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 16px 16px 0;
+}
+article.article-2 > div.box-3 > div.tags > span {
+  padding: 1px 3px;
+  margin: 0 3px 20px 0;
+  font-size: 15px;
+  background-color: #f1f1f1;
+}
+article.article-2 > div.box-3 > div.tags > span.active {
+  background-color: black;
+  color: white;
+}
+footer {
+  background-color: #616161;
+  color: white;
+  padding: 16px 32px;
+  max-width: 1380px;
+}
+footer > button {
+  font-size: 15px;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  margin: 0 5px 16px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+footer > p {
+  margin: 15px 0;
+}
+footer > p > a {
+  color: whitesmoke;
+  font-family: "Allison", cursive;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer > button:hover {
+  background-color: #cccccc;
+}
+@media screen and (max-width: 740px) {
+  main {
+    flex-direction: column;
+  }
+  article.article-2 > div {
+    max-width: 740px;
+  }
+  article.article-2 > div.box-1 > img {
+    width: 100%;
+    max-width: 740px;
+  }
+}
